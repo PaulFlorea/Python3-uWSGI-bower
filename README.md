@@ -1,6 +1,6 @@
 # Python3-uWSGI
 
-To setup your application, put your requirements.txt file in the ./src directory and include this Dockerfile in the project root.
+To setup your application: put your requirements.txt file in the ./src directory, your uwsgi.ini file in the ./uwsgi directory, and include this Dockerfile in the project root.
 
 
 ```
