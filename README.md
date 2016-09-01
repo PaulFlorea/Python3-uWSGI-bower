@@ -10,5 +10,5 @@ FROM paulflorea/python3-uswgi:latest
 ADD . /home/docker/app/
 RUN pip install -r /home/docker/app/src/requirements.txt
 
-CMD ["uwsgi", "--ini /home/docker/app/uwsgi/uwsgi.ini"]
+CMD uwsgi --ini /var/www/app/uwsgi/uwsgi.ini --callable app
 ```
