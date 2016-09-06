@@ -13,7 +13,7 @@ RUN apt-get install -y python3 python3-dev python3-setuptools python-software-pr
 RUN easy_install3 pip
 
 # install uwsgi now because it takes a little while
-RUN apt-get install libpcre3 libpcre3-dev
+RUN apt-get install -y libpcre3 libpcre3-dev
 RUN pip install uwsgi
 
 # Install some package specific libraries
