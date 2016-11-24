@@ -1,7 +1,5 @@
-FROM paulflorea/python3-uwsgi:latest
+FROM paulflorea/python3-uwsgi:latest-alpine
 
-# install bower & then install the components
-RUN apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
-RUN apt-get install -y nodejs
+# install bower
+RUN apk add nodejs
 RUN npm install -g bower
