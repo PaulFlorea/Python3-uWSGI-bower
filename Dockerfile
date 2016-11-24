@@ -1,7 +1,4 @@
-FROM python:3.5
-
-# So simple now
-RUN pip install uwsgi
+FROM paulflorea/python3-uwsgi:latest
 
 # install bower & then install the components
 RUN apt-get install -y curl
