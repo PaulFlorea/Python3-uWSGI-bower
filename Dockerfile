@@ -1,4 +1,4 @@
-FROM paulflorea/python3-uwsgi:latest-alpine
+FROM paulflorea/python3-uwsgi:alpine
 
 # install bower
 RUN apk add nodejs
